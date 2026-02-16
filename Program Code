@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    srand(time(0));
+    
+    char choice;
+    
+    cout << "Welcome to the Dice Rolling Game!" << endl;
+    cout << "This program simulates rolling a pair of dice." << endl;
+    
+    do {
+        int die1 = rand() % 6 + 1;
+        int die2 = rand() % 6 + 1;
+        int sum = die1 + die2;
+        
+        cout << "\nYou rolled:" << endl;
+        cout << "Die 1: " << die1 << endl;
+        cout << "Die 2: " << die2 << endl;
+        cout << "Sum: " << sum << endl;
+        
+        if (die1 == die2) {
+            cout << "You rolled doubles!" << endl;
+            if (die1 == 1) {
+                cout << "Snake eyes!" << endl;
+            } else if (die1 == 6) {
+                cout << "Boxcars!" << endl;
+            }
+        }
+        
+        if (sum == 7 || sum == 11) {
+            cout << "Lucky roll!" << endl;
+        }
+        
+        cout << "\nWould you like to roll again? (y/n): ";
+        cin >> choice;
+        
+    } while (choice == 'y' || choice == 'Y');
+    
+    cout << "\nThanks for playing! Goodbye!" << endl;
+    
+    return 0;
+}
