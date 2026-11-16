@@ -1,5 +1,7 @@
 # Dice Rolling Game (C++)
 
+![GitHub repository card for Dice-Rolling-Game](docs/images/dice-rolling.png)
+
 A beginner C++ console game that simulates rolling a pair of dice, with special
 outcome detection (snake eyes, boxcars, lucky rolls) and a repeat loop.
 
