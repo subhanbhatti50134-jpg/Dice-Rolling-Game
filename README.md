@@ -1,5 +1,7 @@
 # Dice Rolling Game (C++)
 
+[![CI](https://github.com/subhanbhatti50134-jpg/Dice-Rolling-Game/actions/workflows/ci.yml/badge.svg)](https://github.com/subhanbhatti50134-jpg/Dice-Rolling-Game/actions/workflows/ci.yml)
+
 ![GitHub repository card for Dice-Rolling-Game](docs/images/dice-rolling.png)
 
 A beginner C++ console game that simulates rolling a pair of dice, with special
